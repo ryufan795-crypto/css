@@ -24,16 +24,32 @@ body {
     color: var(--text-first);
     background-size: cover !important;
     background-attachment: fixed !important;
-    background-position-x: center !important;
-    background-position-y: center !important;
+    background-position: center center !important;
 }
 
+@media (max-width: 768px) {
+    body {
+        background: url("https://fast.image.delivery/qemhzzh.jpg") var(--bg-color);
+        background-size: cover !important;
+        background-attachment: scroll !important;
+        background-position: center top !important;
+}
+
+
 .container {
-    /* background-color: black; */
     color: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        background: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+
 }
 
 .logo img {
@@ -378,3 +394,4 @@ body {
     }
 
 }
+
