@@ -28,26 +28,12 @@ body {
     background-position: center center !important;
 }
 
-
-@media (max-width: 768px) {
-    html, body {
-        background: url("https://fast.image.delivery/qemhzzh.jpg") no-repeat center top !important;
-        background-size: cover !important;
-        background-attachment: scroll !important;
-}
-
 .container {
     color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
-}
 
-@media (max-width: 768px) {
-    .container {
-        background: rgba(0, 0, 0, 0.6);
-        backdrop-filter: blur(6px);
-        -webkit-backdrop-filter: blur(6px);
 }
 
 .logo img {
@@ -392,6 +378,7 @@ body {
     }
 
 }
+
 
 
 
