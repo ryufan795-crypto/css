@@ -58,7 +58,7 @@
 .popup-header {
     height: 48px;
     width: 100%;
-    background: #ecaf08;
+    background: #14b7dd;
     float: left;
 }
 
@@ -901,4 +901,5 @@ p {
     .cs-height {
         max-height: 95px
     }
+
 }
