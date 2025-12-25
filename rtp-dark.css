@@ -30,11 +30,10 @@ body {
 
 
 @media (max-width: 768px) {
-    body {
-        background: url("https://fast.image.delivery/qemhzzh.jpg") var(--bg-color);
+    html, body {
+        background: url("https://fast.image.delivery/qemhzzh.jpg") no-repeat center top !important;
         background-size: cover !important;
         background-attachment: scroll !important;
-        background-position: center top !important;
 }
 
 .container {
@@ -393,6 +392,7 @@ body {
     }
 
 }
+
 
 
 
