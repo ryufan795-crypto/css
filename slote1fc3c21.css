@@ -58,7 +58,7 @@
 .popup-header {
     height: 48px;
     width: 100%;
-    background: #14b7dd;
+    background: #ff0000;
     float: left;
 }
 
@@ -903,4 +903,5 @@ p {
     }
 
 }
+
 
