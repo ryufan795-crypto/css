@@ -16,9 +16,9 @@
     width: 359px;
     height: 589px;
     margin: 2% auto;
-    background: #313131;
+    background: #000000;
     border-radius: 0px;
-    color: white;
+    color: #ffffff;
 }
 
 @media (max-width: 512px) {
@@ -903,3 +903,4 @@ p {
     }
 
 }
+
