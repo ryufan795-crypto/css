@@ -17,7 +17,6 @@
     --g1: #ffff;
     --g2: #ffff;
     --marquee: #f3f3f3;
-    
 }
 
 body {
@@ -30,11 +29,11 @@ body {
 }
 
 .container {
+    /* background-color: black; */
     color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-
 }
 
 .logo img {
@@ -377,12 +376,4 @@ body {
     .container-xl {
         max-width: 1100px !important;
     }
-
 }
-
-
-
-
-
-
-
