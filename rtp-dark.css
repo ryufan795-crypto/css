@@ -385,37 +385,72 @@ body {
 .sosmed.whatsapp  { --link: url("https://wa.me/628xxxx"); }
 
 
-.sosmed {
-  display: block;
-  padding: 12px;
+/* === TOGGLE BUTTON === */
+.agen-toggle-btn {
+  position: fixed;
+  left: 20px;
+  bottom: 110px;
+  background: linear-gradient(to bottom, #444444, #2f2f2f);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  border: 2px solid #f70f0f;
+  z-index: 999999;
+}
+
+/* === MENU === */
+.agen-social {
+  position: fixed;
+  left: -320px;
+  bottom: 70px;
+  width: 250px;
+  background: rgba(30,30,30,0.95);
+  z-index: 999999;
+  transition: left 0.4s ease;
+  padding: 10px;
+  border-radius: 0 20px 20px 0;
+}
+
+.agen-social.agen-open {
+  left: 0;
+}
+
+.agen-social ul {
+  list-style: none;
+  padding: 0;
+}
+
+.agen-social li {
+  margin-bottom: 12px;
+}
+
+.agen-social a {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
   background: #111;
   border-radius: 12px;
-  color: #fff;
   text-decoration: none;
-  margin-bottom: 10px;
-  position: relative;
 }
 
-.sosmed::after {
-  content: "";
-  position: absolute;
-  inset: 0;
+.agen-social img {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
 }
 
-
-.sosmed {
-  pointer-events: auto;
+.agen-info span {
+  color: #fff;
+  font-size: 14px;
 }
 
-.sosmed {
-  cursor: pointer;
+.agen-close-btn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 8px;
+  border-radius: 20px;
 }
 
-.sosmed {
-  --real-link: attr(href);
-}
-
-
-.sosmed {
-  background-image: var(--link);
-}
