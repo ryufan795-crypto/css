@@ -234,7 +234,7 @@ body {
 }
 
 .btn-login {
-    background: linear-gradient(0deg, #f90000 0%, #000000 100%);
+    background: linear-gradient(0deg, #000000 0%, #000000 100%);
     padding: 0.4rem;
     color: #f1f1f1;
     border: none;
@@ -242,7 +242,7 @@ body {
 }
 
 .btn-login:hover {
-    background: linear-gradient(0deg, #1c1a1a 0%, #000000 100%);
+    background: linear-gradient(0deg, #000000 0%, #000000 100%);
 }
 
 .btn-daftar {
