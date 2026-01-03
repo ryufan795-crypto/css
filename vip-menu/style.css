@@ -48,7 +48,7 @@ body {
 
 
 .rtp-card {
-    background: linear-gradient(0deg, var(--first-color) 0%, var(--fifth-color) 100%);
+    background: linear-gradient(0deg, #000000 0%, #101010 100%);
     padding: 0.7rem;
     text-align: center;
     width: 24rem;
