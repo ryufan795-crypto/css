@@ -202,7 +202,7 @@ body {
 }
 
 .icon-prov {
-    background: linear-gradient(0deg, #ff0000 0%, #0a0a0a 100%);
+    background: linear-gradient(0deg, #a70f0f 0%, #0a0a0a 100%);
     display: flex;
     position: relative;
     overflow: auto !important;
