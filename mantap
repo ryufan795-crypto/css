@@ -1,0 +1,90 @@
+$(document).ready(function () {
+
+    let maxSpin = 5;            // JUMLAH SPIN
+    let currentSpin = 0;
+    let isSpinning = false;     // ANTI DOUBLE CLICK
+    let winAtSpin = 1;          // FAKE WIN DI SPIN KE-3
+    let redirectDelay = 8000;   // REDIRECT SETELAH JACKPOT (ms)
+    let countDownInterval;
+
+    $('.spinremaining').text(maxSpin);
+
+    $('.btn-spin').on('click', function () {
+
+        if (isSpinning) return; // ANTI SPAM CLICK
+        isSpinning = true;
+
+        currentSpin++;
+        maxSpin--;
+
+        $('.spinremaining').text(maxSpin);
+
+        // RESET CLASS
+        $('.spinner-col').removeClass('spinned-1');
+
+        // SPIN ANIMATION
+        setTimeout(() => {
+            $('.spinner-col1').addClass('spinned-1');
+            $('.spinner-col2').addClass('spinned-1');
+            $('.spinner-col3').addClass('spinned-1');
+        }, 50);
+
+        // CEK MENANG / KALAH
+        setTimeout(() => {
+
+            if (currentSpin === winAtSpin) {
+                jackpotWin();
+            } else {
+                spinFail();
+            }
+
+        }, 5200);
+    });
+
+    function spinFail() {
+        $('.spin-error').addClass('active');
+
+        setTimeout(() => {
+            $('.spin-error').removeClass('active');
+            isSpinning = false;
+
+            if (maxSpin <= 0) {
+                $('.btn-spin').prop('disabled', true).text('SPIN HABIS');
+            }
+        }, 2000);
+    }
+
+    function startCountdown(duration) {
+        let timer = duration;
+
+        clearInterval(countDownInterval);
+
+        countDownInterval = setInterval(() => {
+            let hours = Math.floor(timer / 3600);
+            let minutes = Math.floor((timer % 3600) / 60);
+            let seconds = timer % 60;
+
+            $('#hours').text(String(hours).padStart(2, '0'));
+            $('#minutes').text(String(minutes).padStart(2, '0'));
+            $('#seconds').text(String(seconds).padStart(2, '0'));
+            
+            if (timer <= 0) {
+                clearInterval(countDownInterval);
+                window.location.href = 'https://shortlucky.com/cuanbareng2026';
+            }
+
+            timer--;
+
+        }, 1000);
+    }
+
+    function jackpotWin() {
+        $('.spin-modal-backdrop').fadeIn();
+        $('.spin-modal').addClass('open');
+
+        startCountdown(300);
+    }
+
+    
+
+});
