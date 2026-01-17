@@ -8,15 +8,24 @@
     --bg-color: #131313;
     --text-first: #fafafa;
     --text-second: #0a0a0a;
+    
+    --first-color: #fdef02;
+    --second-color: #fab92d;
+    --third-color: #e9ab00;
+    --fourth-color: #e9be00;
+    --fifth-color: #fab92d;
+    --g1: #fab92d;
+    --g2: #e9ab00;
+ }
 
-    --first-color: #f7c900;
-    --second-color: #ffcc24;
-    --third-color: #fdc202;
-    --fourth-color: #ffe031;
-    --fifth-color: #ec8e00;
-    --g1: #f7c900;
-    --g2: #fdc202;
+body {
+    background: var(--bg-color);
+    color: var(--text-first);
 }
+
+a:hover, a:active, a:link, a:visited {
+    text-decoration: none;
+  }
 
 .logo img {
     width: 19rem;
@@ -28,7 +37,7 @@
 }
 
 .rtp-card {
-    background: linear-gradient(0deg, #e3c100 0%, #fc2100 100%);
+    background: linear-gradient(0deg, var(--bs-orange) 0%, var(--bs-orange) 100%);
     padding: 0.7rem;
     text-align: center;
     width: 24rem;
@@ -68,10 +77,8 @@
 
 .btn-play {
     position: absolute;
-    top: 50%;
-    /* position the top  edge of the element at the middle of the parent */
-    left: 50%;
-    /* position the left edge of the element at the middle of the parent */
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
     transform: translate(-50%, -50%);
     z-index: 10;
     border: none;
@@ -84,7 +91,7 @@
     max-width: 70%;
     border: 2px solid var(--first-color);
     background: linear-gradient(0deg, var(--g1) 0%, var(--g2) 100%);
-    color: var(--text-second);
+    color: var(--text-first);
 }
 
 .btn-play:hover {
@@ -108,8 +115,7 @@
     font-size: 0.7rem;
 }
 
-.pola-wrapper h4 i,
-.pola-wrapper h5 i {
+.pola-wrapper h4 i, .pola-wrapper h5 i {
     color: var(--first-color);
 }
 
@@ -129,23 +135,22 @@
     font-size: 0.7rem;
 }
 
-.top-game,
-.hot-game {
+.top-game, .hot-game {
     background-repeat: no-repeat !important;
     position: absolute;
     width: 3rem;
     top: 0rem;
+    z-index: 2;
     height: 2.9rem;
     left: 0.4rem;
-    z-index: 2;
 }
 
 .top-game {
-    background: url('/web/20241228094231im_/https://rtp-1.cleogaming.info/images/top.gif');
+    background: url('top.gif');
 }
 
 .hot-game {
-    background: url('/web/20241228094231im_/https://rtp-1.cleogaming.info/images/hot.gif');
+    background: url('hot.gif');
 }
 
 .icon-providers {
@@ -162,8 +167,7 @@
     width: 1.7rem;
 }
 
-.slider,
-.swiper {
+.slider, .swiper {
     width: 50rem;
     max-width: 100%;
 }
@@ -186,23 +190,19 @@
     border-bottom: 1px dashed var(--first-color);
 }
 
-.bg-theme {
-    background: var(--bg-color);
-    padding: 0.5rem;
-}
-
 .running-text {
-    background: #fc2100;
+    background: var(--bs-orange);
     font-weight: 500;
     text-transform: uppercase;
     font-size: 1rem;
-    color: #ffffff;
+    color: var(--text-second);
     padding: 0.1rem;
 }
 
 .icon-prov {
-    background: linear-gradient(0deg, #e3c100 0%, #fc2100 100%);
+    background: linear-gradient(0deg, var(--first-color) 0%, var(--bs-orange) 100%);
     display: flex;
+    justify-content: center;
     position: relative;
     overflow: auto !important;
 }
@@ -210,7 +210,7 @@
 .icon-card-bg {
     cursor: pointer;
     padding: 0.1rem !important;
-    color: var(--text-first);
+    color: var(--text-second);
 }
 
 .icon-card-bg p {
@@ -223,9 +223,9 @@
 }
 
 .img-prov {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
+display: block;
+margin-right: auto;
+margin-left: auto;
 }
 
 .item-prov {
@@ -233,17 +233,17 @@
 }
 
 .btn-credit {
-    background: linear-gradient(to right top, #fc2100, #e3c100, #fc2100, #e3c100, #fc2100);
-    box-shadow: 0px 0px 0px 1px #e3c100, inset 0px 2px 0px 0px #fc2100, inset 0px 0px 0px 2px #e3c100, 3px 3px 3px 1px rgb(0 0 0 / 20%);
+    background: linear-gradient(0deg, var(--bs-orange) 0%, var(--bs-orange) 100%);
     padding: 0.6rem;
-    color: #ffffff;
+    color: var(--text-second);
     border: none;
     font-weight: bold;
     border-right: 1px solid var(--first-color);
+    border-bottom: 1px solid aliceblue;
 }
 
 .btn-credit:hover {
-    background: linear-gradient(0deg, var(--g2) 0%, var(--g1) 100%);
+    background: linear-gradient(0deg, var(--bs-orange) 0%, var(--bs-orange) 100%);
 }
 
 .nav-bottom {
@@ -253,12 +253,12 @@
     z-index: 11;
     overflow: hidden;
     width: 100%;
-    border-top: 3px solid #ff0000;
+    border-top: 3px solid var(--bs-orange);
 }
 
 .item-nav-bottom {
-    background: linear-gradient(0deg, #e3c100 0%, #fc2100 100%);
-    color: #ffffff;
+    background: linear-gradient(0deg, var(--bs-orange) 0%, var(--first-color) 100%);
+    color: var(--text-second);
     font-weight: bold;
     text-align: center;
     font-size: 0.8rem;
@@ -266,7 +266,7 @@
 }
 
 .item-nav-bottom:hover {
-    background: linear-gradient(0deg, #000000 0%, #000000 100%);
+    background: linear-gradient(0deg, var(--bs-orange) 0%, var(--bs-orange) 100%);
     cursor: pointer;
 }
 
@@ -277,16 +277,16 @@
 }
 
 .btn-up {
-    display: none;
-    position: fixed;
-    bottom: 3.8rem;
-    right: 0;
-    z-index: 99;
-    font-size: 0.9rem;
+  display: none;
+  position: fixed;
+  bottom: 3.8rem;
+  right: 0;
+  z-index: 99;
+  font-size: 0.9rem;
 }
 
 /* Percentage */
-.percent {
+.percent{
     height: 19px;
     margin-top: 10px !important;
     display: flex;
@@ -302,8 +302,8 @@
     position: relative;
 }
 
-.percent p {
-    z-index: 15;
+.percent p{
+    z-index: 15;    
     position: absolute;
     text-align: center;
     width: 100%;
@@ -314,9 +314,9 @@
     color: black;
 }
 
-.percent-bar {
+.percent-bar{
     /* background-color: #ffc107; */
-    background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
     background-size: 1rem 1rem;
     display: -ms-flexbox;
     display: flex;
@@ -336,15 +336,15 @@
     z-index: 10;
 }
 
-.good {
+.good{
     background-color: #ffc107;
 }
 
-.great {
+.great{
     background-color: #28a745;
 }
 
-.bad {
+.bad{
     background-color: #dc3545;
 }
 
@@ -357,33 +357,7 @@
 
 /* Container */
 @media (min-width: 1200px) {
-
-    .container,
-    .container-lg,
-    .container-md,
-    .container-sm,
-    .container-xl {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
         max-width: 1100px !important;
     }
 }
-/*
-     FILE ARCHIVED ON 09:42:31 Dec 28, 2024 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 12:45:28 Mar 23, 2025.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
-*/
-/*
-playback timings (ms):
-  captures_list: 0.552
-  exclusion.robots: 0.021
-  exclusion.robots.policy: 0.009
-  esindex: 0.012
-  cdx.remote: 10.159
-  LoadShardBlock: 72.719 (3)
-  PetaboxLoader3.datanode: 148.341 (5)
-  load_resource: 268.22
-  PetaboxLoader3.resolve: 143.992
-  loaddict: 62.585
-*/
