@@ -19,8 +19,12 @@
  }
 
 body {
-    background: var(--bg-color);
+    background: url("https://goldspin.marketcoin88.info/assets/img/dkz/bg.jpg?v=123") var(--bg-color);
     color: var(--text-first);
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    background-position-x: center !important;
+    background-position-y: center !important
 }
 
 a:hover, a:active, a:link, a:visited {
