@@ -512,3 +512,483 @@ html body .item-nav-bottom:hover {
 
     color: #F8D57E !important;
 }
+
+/* =========================================================
+   FINAL LAYOUT FIX - TESSA77
+   Theme + layout dibuat mandiri agar tidak bergantung
+   penuh pada CSS lain untuk struktur card/provider.
+========================================================= */
+
+/* PAGE */
+html,
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    min-height: 100%;
+}
+
+body {
+    background:
+        url("https://fast.image.delivery/njfyypx.png")
+        #09000F
+        center center / cover fixed no-repeat !important;
+    color: #FFFFFF !important;
+}
+
+/* MAIN CONTAINER */
+.container {
+    width: 100% !important;
+    max-width: 1100px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+}
+
+/* LOGO */
+.logo img {
+    display: block !important;
+    width: 19rem !important;
+    max-width: 90% !important;
+    height: auto !important;
+    margin: 1.9rem auto 1rem !important;
+}
+
+/* SLIDER */
+.slider,
+.swiper,
+.slider-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.slider-img {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+}
+
+
+/* =========================================================
+   PROVIDER MENU - WAJIB HORIZONTAL
+========================================================= */
+
+html body .icon-prov {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: stretch !important;
+
+    width: 100% !important;
+
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+
+    white-space: nowrap !important;
+
+    scrollbar-width: thin;
+
+    background:
+        linear-gradient(
+            180deg,
+            #240638 0%,
+            #13041E 60%,
+            #09030E 100%
+        ) !important;
+
+    border-top: 1px solid rgba(248,213,126,.40) !important;
+    border-bottom: 1px solid rgba(182,92,255,.42) !important;
+}
+
+html body .item-prov {
+    flex: 0 0 auto !important;
+    display: block !important;
+    min-width: 86px !important;
+}
+
+html body .icon-card-bg {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    min-width: 86px !important;
+    height: 100% !important;
+
+    padding: 4px 6px !important;
+}
+
+html body .icon-card-bg .p-2 {
+    padding: 4px !important;
+}
+
+html body .img-prov {
+    display: block !important;
+    width: 40px !important;
+    height: 40px !important;
+    object-fit: contain !important;
+    margin: 0 auto 4px !important;
+}
+
+html body .icon-card-bg p {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    color: #FFFFFF !important;
+
+    font-size: 9.5px !important;
+    line-height: 1.15 !important;
+    font-weight: 700 !important;
+
+    text-align: center !important;
+    white-space: nowrap !important;
+}
+
+
+/* =========================================================
+   RTP GRID / CARD
+========================================================= */
+
+html body #slot_leaks {
+    width: 100% !important;
+}
+
+html body #slot_leaks > [class*="col-"] {
+    min-width: 0 !important;
+}
+
+/* Card ikut kolom bootstrap, jangan pakai lebar fixed */
+html body #slot_leaks .rtp-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+
+    height: auto !important;
+
+    padding: .55rem !important;
+
+    overflow: hidden !important;
+
+    box-sizing: border-box !important;
+}
+
+html body #slot_leaks .rtp-card .row {
+    min-width: 0 !important;
+}
+
+html body #slot_leaks .rtp-card .row > [class*="col-"] {
+    min-width: 0 !important;
+}
+
+
+/* =========================================================
+   GAME IMAGE
+========================================================= */
+
+html body #slot_leaks .place-img-rtp {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+
+    padding: .35rem !important;
+
+    overflow: hidden !important;
+
+    box-sizing: border-box !important;
+}
+
+html body #slot_leaks .rtp-card-img {
+    display: block !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    height: auto !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    object-fit: cover !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   POLA PANEL
+========================================================= */
+
+html body #slot_leaks .pola-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+
+    padding: .65rem .45rem !important;
+
+    box-sizing: border-box !important;
+}
+
+html body #slot_leaks .pola-wrapper h4 {
+    margin-bottom: .35rem !important;
+
+    font-size: .78rem !important;
+    line-height: 1.2 !important;
+
+    white-space: nowrap !important;
+}
+
+html body #slot_leaks .pola-wrapper h5 {
+    font-size: .62rem !important;
+}
+
+html body #slot_leaks .pola-wrapper hr {
+    margin-top: .35rem !important;
+    margin-bottom: .35rem !important;
+}
+
+html body #slot_leaks .table-pola {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    table-layout: fixed !important;
+
+    border-collapse: collapse !important;
+}
+
+html body #slot_leaks .table-pola td {
+    padding: 1px 2px !important;
+
+    font-size: .52rem !important;
+    line-height: 1.35 !important;
+
+    text-align: center !important;
+
+    white-space: nowrap !important;
+}
+
+
+/* PROVIDER ICON DI DALAM CARD */
+html body #slot_leaks .icon-providers {
+    position: absolute !important;
+
+    top: .4rem !important;
+    right: .35rem !important;
+
+    width: 1.55rem !important;
+
+    z-index: 3 !important;
+}
+
+html body #slot_leaks .icon-providers img {
+    display: block !important;
+
+    width: 1.35rem !important;
+    max-width: 100% !important;
+
+    height: auto !important;
+}
+
+
+/* =========================================================
+   RTP PERCENTAGE
+========================================================= */
+
+html body #slot_leaks .percent {
+    width: 100% !important;
+
+    height: 18px !important;
+
+    margin-top: 8px !important;
+
+    overflow: hidden !important;
+}
+
+html body #slot_leaks .percent p {
+    width: 100% !important;
+
+    font-size: 11px !important;
+    line-height: 18px !important;
+
+    top: 0 !important;
+
+    transform: none !important;
+
+    margin: 0 !important;
+
+    text-align: center !important;
+}
+
+html body #slot_leaks .percent-bar {
+    height: 100% !important;
+}
+
+
+/* =========================================================
+   PLAY BUTTON
+========================================================= */
+
+html body #slot_leaks .btn-play {
+    display: block !important;
+
+    width: 100% !important;
+
+    margin-top: 7px !important;
+
+    padding: .28rem .2rem !important;
+
+    font-size: .58rem !important;
+    line-height: 1.2 !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   LOGIN / DAFTAR
+========================================================= */
+
+html body .btn-login,
+html body .btn-daftar {
+    display: block !important;
+
+    width: 100% !important;
+
+    padding: .45rem !important;
+
+    border: 0 !important;
+
+    background:
+        linear-gradient(
+            180deg,
+            #14041F,
+            #060208
+        ) !important;
+
+    color: #FFF7DE !important;
+
+    font-weight: 700 !important;
+}
+
+
+/* =========================================================
+   SEARCH AREA
+========================================================= */
+
+html body .navbar-search {
+    width: 100% !important;
+}
+
+html body .navbar-search .row {
+    align-items: center !important;
+}
+
+html body .input-search {
+    min-width: 0 !important;
+}
+
+html body .search-button {
+    min-height: 100% !important;
+}
+
+
+/* =========================================================
+   RUNNING TEXT
+========================================================= */
+
+html body .running-text {
+    width: 100% !important;
+
+    overflow: hidden !important;
+}
+
+
+/* =========================================================
+   RESPONSIVE TABLET
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+    .container {
+        padding-left: 6px !important;
+        padding-right: 6px !important;
+    }
+
+    html body #slot_leaks .rtp-card {
+        padding: .45rem !important;
+    }
+
+    html body #slot_leaks .pola-wrapper {
+        padding: .55rem .35rem !important;
+    }
+
+    html body #slot_leaks .pola-wrapper h4 {
+        font-size: .7rem !important;
+    }
+
+    html body #slot_leaks .table-pola td {
+        font-size: .48rem !important;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE MOBILE
+========================================================= */
+
+@media (max-width: 575.98px) {
+
+    body {
+        background-attachment: scroll !important;
+    }
+
+    .logo img {
+        width: 15rem !important;
+        max-width: 88% !important;
+    }
+
+    html body .item-prov,
+    html body .icon-card-bg {
+        min-width: 72px !important;
+    }
+
+    html body .img-prov {
+        width: 32px !important;
+        height: 32px !important;
+    }
+
+    html body .icon-card-bg p {
+        font-size: 8px !important;
+    }
+
+    html body #slot_leaks .rtp-card {
+        padding: .35rem !important;
+        border-radius: 9px !important;
+    }
+
+    html body #slot_leaks .place-img-rtp {
+        padding: .25rem !important;
+    }
+
+    html body #slot_leaks .pola-wrapper {
+        padding: .45rem .28rem !important;
+    }
+
+    html body #slot_leaks .pola-wrapper h4 {
+        font-size: .6rem !important;
+    }
+
+    html body #slot_leaks .table-pola td {
+        font-size: .42rem !important;
+    }
+
+    html body #slot_leaks .btn-play {
+        font-size: .5rem !important;
+        padding: .24rem .15rem !important;
+    }
+
+    html body #slot_leaks .percent p {
+        font-size: 10px !important;
+    }
+}
